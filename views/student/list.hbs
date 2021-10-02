@@ -1,0 +1,42 @@
+<h3><a class="btn btn-secondary" href="/student"><i class="fa fa-plus"></i> Create New</a> Student Details</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>StudentName</th>
+            <th>FatherName</th>
+            <th>DOB</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Pin</th>
+            <th>PhoneNumber</th>
+            <th>Email</th>
+            <th>class</th>
+            <th>Marks</th>
+            <th> Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.StudentName}}</td>
+            <td>{{this.FatherName}}</td>
+            <td>{{this.DOB}}</td>
+            <td>{{this.Address}}</td>
+            <td>{{this.State}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.Pin}}</td>
+            <td>{{this.PhoneNumber}}</td>
+            <td>{{this.Email}}</td>
+            <td>{{this.class}}</td>
+            <td>{{this.Marks}}</td>
+            <td>{{this.Date}}</td>
+            <td>
+                <a href="/student/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
